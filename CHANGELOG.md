@@ -12,8 +12,9 @@ Release channels:
 
 ## [Unreleased]
 
-## [0.1.0] — 2026-07-24
-First public release.
+## [0.1.0-beta.1] — 2026-07-24
+First beta release — the full feature set, published to the **beta channel** for testing before a
+stable cut. Enable *Settings → App updates → Include beta & hotfix releases* to receive it.
 
 ### Added
 - **Manga engine**: bundles Suwayomi as a local engine and acts as a themed Electron client to the
@@ -32,6 +33,8 @@ First public release.
   (dark / OLED / OLED-red), and a themed NSIS installer.
 - **Automatic updates**: silently checks GitHub Releases at startup and prompts to download & install
   a newer version. Opt-in **beta channel** in Settings delivers prereleases (hotfixes / unstable builds).
+- **In-app changelog**: a "What's new" viewer in Settings → App updates, and the changelog pops up
+  automatically the first time you launch after an update.
 
 [Unreleased]: https://github.com/Shade2010/RiotMangaViewer-releases/releases
-[0.1.0]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0
+[0.1.0-beta.1]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.1
