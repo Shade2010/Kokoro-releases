@@ -12,6 +12,27 @@ Release channels:
 
 ## [Unreleased]
 
+## [0.1.0-beta.3] — 2026-07-24
+Third beta — ultraviolet themes plus update and changelog polish.
+
+### Added
+- **Ultraviolet themes** (Settings → Appearance → Theme): a violet-accented family with a recolored
+  app logo — **Ultraviolet Warm** and **Ultraviolet OLED**, each as a flat **(lite)** variant and a
+  full variant with a violet glow, a glammed-up title bar, and a smooth sheen that sweeps over the
+  logo while the app loads.
+
+### Fixed
+- **Update notes**: the "update available" prompt now shows this version's changelog (rendered as clean
+  text) instead of the raw commit message with visible HTML tags. Release notes are published from
+  CHANGELOG.md automatically.
+- **"What's new" viewer**: now shows only the version you just installed (with a link to GitHub for the
+  full history) instead of the entire changelog, and no longer renders cramped or cut off mid-item
+  (the modal was being squeezed to 400px by a CSS specificity clash).
+
+### Changed
+- **Library cards**: show the source's name at the bottom instead of its numeric source ID.
+- **"What's new" popup**: wider, with a larger, more prominent Riot Manga icon.
+
 ## [0.1.0-beta.2] — 2026-07-24
 Second beta — stability and safe-update fixes on top of beta.1.
 
@@ -57,5 +78,6 @@ stable cut. Enable *Settings → App updates → Include beta & hotfix releases*
   automatically the first time you launch after an update.
 
 [Unreleased]: https://github.com/Shade2010/RiotMangaViewer-releases/releases
+[0.1.0-beta.3]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.3
 [0.1.0-beta.2]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.2
 [0.1.0-beta.1]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.1
