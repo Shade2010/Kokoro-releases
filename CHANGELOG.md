@@ -12,6 +12,26 @@ Release channels:
 
 ## [Unreleased]
 
+## [0.1.0-beta.2] — 2026-07-24
+Second beta — stability and safe-update fixes on top of beta.1.
+
+### Fixed
+- **FlareSolverr process leak**: its detached Chromium/driver children could orphan and pile up across
+  sessions. They're now reliably killed (by folder path) on stop, and any strays are reaped at startup.
+- **Update status**: a failed update check no longer dumps a raw error blob into Settings; beta builds
+  follow the beta channel automatically so beta→beta updates work.
+- **Update safety**: auto-updates never touch your data — the silent uninstall phase now hard-skips the
+  optional data-deletion prompt (library, extensions, settings and downloads are always kept on update).
+
+### Changed
+- **Networking**: the installer now grants Windows Firewall access to the app and bundled engine up
+  front, and the Cloudflare solver binds to localhost — so there are no first-run firewall prompts.
+- **Installer**: the optional Cloudflare helpers (Browser / Solver) are now checked by default.
+- **Uninstall**: your library, history, settings and downloads are now kept by default — the
+  uninstaller asks first, and only removes them if you choose to.
+- **Program name**: the installed app now shows as just "Riot Manga Viewer" in Apps & Features (the
+  version lives in the file's Properties → Details, not the name).
+
 ## [0.1.0-beta.1] — 2026-07-24
 First beta release — the full feature set, published to the **beta channel** for testing before a
 stable cut. Enable *Settings → App updates → Include beta & hotfix releases* to receive it.
@@ -37,4 +57,5 @@ stable cut. Enable *Settings → App updates → Include beta & hotfix releases*
   automatically the first time you launch after an update.
 
 [Unreleased]: https://github.com/Shade2010/RiotMangaViewer-releases/releases
+[0.1.0-beta.2]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.2
 [0.1.0-beta.1]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.1
