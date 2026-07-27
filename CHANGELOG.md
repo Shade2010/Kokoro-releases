@@ -12,6 +12,41 @@ Release channels:
 
 ## [Unreleased]
 
+## [0.1.0-beta.4] — 2026-07-27
+Fourth beta — a big reader overhaul, install-anywhere storage, and performance fixes.
+
+### Added
+- **Reader**
+  - **Auto view mode** (new default): each title opens in the right mode automatically — webtoons/manhwa
+    (tall vertical strips) in Long strip, page-based manga in Paged. Choose a fixed default (Auto / Paged
+    / Long strip) in Settings → Reader or the reader's View-mode dropdown; explicit modes still offer a
+    one-tap switch when a title doesn't match.
+  - **Pages at once**: show 1–10 pages side by side in Paged mode. Right-to-left reverses the spread so
+    the earlier page sits on the right (manga order); stepping and resume align to spreads.
+  - **Page scaling**: choose how a page is sized — **Fit** (whole page on screen), **Fill width**, or a
+    **Custom %** of the column width (Fill/Custom scroll if the page is taller).
+  - **Hide pages**: right-click a page (or hover it and press **h**) to hide a stray notes/ad page so it
+    stops throwing off two-page spreads; **u** undoes the last hide. Persists per chapter.
+- **Install anywhere, keep C: clean**: the installer lets you choose the install location, and if you
+  install off the C: drive, ALL app data — the manga engine, installed extensions, downloaded chapters,
+  caches, the bundled Cloudflare services, and even update downloads — is kept on that drive. Nothing of
+  ours lives on C:. The new Settings → Storage locations section shows exactly where everything is.
+
+### Changed
+- **Reader**
+  - **True paged mode**: each page now fits entirely on screen, so a tall page no longer scrolls like a
+    strip.
+  - **Mode-aware settings**: the Display panel shows only the options that apply to the current view mode
+    (Paged hides the long-strip options; Long strip hides reading direction).
+  - **Directional nav**: the chapter/page buttons and their ‹ › arrows mirror the reading direction
+    (forward on the left for right-to-left and top-down).
+
+### Fixed
+- **Query cancellation**: leaving a page (search, details, reader) now cancels its in-flight source
+  queries, so a slow request no longer leaves the rest of the app stuck loading.
+- **Changelog viewer**: a bullet whose text wraps across lines no longer breaks mid-sentence into a
+  separate, differently-styled paragraph.
+
 ## [0.1.0-beta.3] — 2026-07-24
 Third beta — ultraviolet themes plus update and changelog polish.
 
@@ -78,6 +113,7 @@ stable cut. Enable *Settings → App updates → Include beta & hotfix releases*
   automatically the first time you launch after an update.
 
 [Unreleased]: https://github.com/Shade2010/RiotMangaViewer-releases/releases
+[0.1.0-beta.4]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.4
 [0.1.0-beta.3]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.3
 [0.1.0-beta.2]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.2
 [0.1.0-beta.1]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.1
