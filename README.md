@@ -1,4 +1,4 @@
-# Riot Manga Viewer — Releases
+# Kokoro — Releases
 
 Public downloads and version history for **Kokoro** (an ad-free multi-source manga reader
 for Windows). The application's source code lives in a private repository; this repo hosts only the
@@ -7,8 +7,8 @@ login.
 
 ## Download
 
-Get the latest installer from the [**Releases**](https://github.com/Shade2010/RiotMangaViewer-releases/releases)
-page — grab the `Riot_Manga_Viewer_Setup_*.exe`.
+Get the latest installer from the [**Releases**](https://github.com/Shade2010/Kokoro-releases/releases)
+page — grab the `Kokoro_Setup_*.exe`.
 
 The app is unsigned, so Windows SmartScreen may warn on first run (More info → Run anyway).
 
