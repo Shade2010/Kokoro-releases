@@ -1,6 +1,6 @@
 # Riot Manga Viewer — Releases
 
-Public downloads and version history for **Riot Manga Viewer** (an ad-free multi-source manga reader
+Public downloads and version history for **Kokoro** (an ad-free multi-source manga reader
 for Windows). The application's source code lives in a private repository; this repo hosts only the
 published installers and the changelog, so the in-app **auto-updater** can fetch updates without any
 login.
