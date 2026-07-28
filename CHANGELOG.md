@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Riot Manga Viewer are documented here.
+All notable changes to Kokoro are documented here.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -11,6 +11,25 @@ Release channels:
   Only delivered to users who opt into the beta channel in Settings → App updates.
 
 ## [Unreleased]
+
+## [0.8.0] — 2026-07-27
+First **stable** release — **Kokoro** (心). Formerly the Riot Manga Viewer beta series, now brought
+together under the new name as the first build on the stable channel. It carries the full feature set
+from the 0.1.0-beta.1 → beta.4 previews (reader overhaul, install-anywhere storage, tag picker,
+ultraviolet themes, CBZ downloads, auto-updates — see the sections below) plus the rebrand:
+
+### Changed
+- **New name and logo**: the app is **Kokoro** everywhere — window title, system tray, taskbar,
+  desktop and Start-menu shortcuts, the installer, and the Apps & Features entry. A new gold-on-black
+  brush icon replaces the old logo across every theme.
+- **Seamless move from Riot Manga Viewer**: the first time you open Kokoro it automatically carries
+  over your existing data — library, reading history, settings and theme, installed extensions, the
+  engine database, and any downloaded chapters — so you pick up exactly where you left off. The
+  download folder is re-homed for you, and your old Riot Manga Viewer data is left untouched as a
+  backup (safe to delete once you're happy).
+- **Installs as a new app**: because of the rename, Kokoro installs alongside your old
+  "Riot Manga Viewer" rather than updating it. Uninstall the old entry whenever you're ready — your
+  data has already been carried over.
 
 ## [0.1.0-beta.4] — 2026-07-27
 Fourth beta — a big reader overhaul, install-anywhere storage, and performance fixes.
@@ -112,8 +131,9 @@ stable cut. Enable *Settings → App updates → Include beta & hotfix releases*
 - **In-app changelog**: a "What's new" viewer in Settings → App updates, and the changelog pops up
   automatically the first time you launch after an update.
 
-[Unreleased]: https://github.com/Shade2010/RiotMangaViewer-releases/releases
-[0.1.0-beta.4]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.4
-[0.1.0-beta.3]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.3
-[0.1.0-beta.2]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.2
-[0.1.0-beta.1]: https://github.com/Shade2010/RiotMangaViewer-releases/releases/tag/v0.1.0-beta.1
+[Unreleased]: https://github.com/Shade2010/Kokoro-releases/releases
+[0.8.0]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.0
+[0.1.0-beta.4]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.1.0-beta.4
+[0.1.0-beta.3]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.1.0-beta.3
+[0.1.0-beta.2]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.1.0-beta.2
+[0.1.0-beta.1]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.1.0-beta.1
