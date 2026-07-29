@@ -12,6 +12,28 @@ Release channels:
 
 ## [Unreleased]
 
+## [0.8.1] — 2026-07-29
+Engine update that gets Cloudflare-protected sources reading again, plus extension-repository management.
+
+### Added
+- **Extension repositories**: a new **Extension repos** section in Settings → manage a collection of
+  repos, adding or removing any by URL. **Keiyoushi** (primary) and **Suwayomi's** repo come preloaded.
+  Each extension now shows **which repo it installs from**, and you can **filter the extension list by
+  repo**.
+
+### Fixed
+- **Cloudflare sources read again**: updated the bundled manga engine, whose embedded-browser update
+  fixes the Cloudflare check that was hanging on sources like AllManga — chapters now load in a couple
+  of seconds instead of spinning indefinitely.
+- **Seamless engine upgrades**: when a Kokoro update ships a newer engine, your installed extensions are
+  automatically re-prepared for it on first launch (otherwise they'd silently fail to load and their
+  sources would vanish). Your library, reading history, and downloads are untouched.
+- **"Check for updates"**: the extension update-check button was erroring out and doing nothing; it
+  works again.
+- **Honest extension updates**: updating an extension no longer claims "Updated" when the repo can't
+  actually provide a newer version — you're told nothing changed instead of being left with a button
+  that never clears.
+
 ## [0.8.0] — 2026-07-27
 First **stable** release — **Kokoro** (心). Formerly the Riot Manga Viewer beta series, now brought
 together under the new name as the first build on the stable channel. It carries the full feature set
@@ -132,6 +154,7 @@ stable cut. Enable *Settings → App updates → Include beta & hotfix releases*
   automatically the first time you launch after an update.
 
 [Unreleased]: https://github.com/Shade2010/Kokoro-releases/releases
+[0.8.1]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.1
 [0.8.0]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.0
 [0.1.0-beta.4]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.1.0-beta.4
 [0.1.0-beta.3]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.1.0-beta.3
