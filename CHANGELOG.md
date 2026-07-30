@@ -12,28 +12,16 @@ Release channels:
 
 ## [Unreleased]
 
-## [0.8.3-beta.4] — 2026-07-29
-Beta test — no functional changes. Published to confirm beta.3 → beta.4 downloads as a small
-differential (delta) update instead of the full installer.
-
-## [0.8.3-beta.3] — 2026-07-29
-Beta test — re-enables **differential (delta) downloads** so updates fetch only the changed parts of
-the installer instead of the whole ~400 MB file. The saving applies from this build forward: updating
-*to* beta.3 is still a full download, but beta.3 → the next build should be much smaller.
-
-## [0.8.3-beta.2] — 2026-07-29
-Beta hotfix test — no functional changes. Published solely to confirm the in-app updater can now
-download and install an update (beta.1 → beta.2) after the "stuck at 100% downloaded" fix.
-
-## [0.8.3-beta.1] — 2026-07-29
-Beta to verify the auto-updater fix — in-app updates were stalling at "100% downloaded" and not installing.
+## [0.9.0] — 2026-07-29
+The in-app updater now works reliably — and downloads only what changed.
 
 ### Fixed
-- **Auto-update can finalize and install**: removed the publisher (code-signing) verification that, on
-  this unsigned build, could stop a completed download from installing. Combined with the full-download
-  switch already in 0.8.2, in-app updates should now download and apply cleanly.
-- **Updater diagnostics**: the updater now writes a log to the app data `logs/updater.log`, so any future
-  stall can be pinpointed instead of failing silently.
+- **Auto-updates no longer stall at "100% downloaded"** and now install correctly. On this unsigned
+  build a code-signing publisher check was blocking a finished download from installing; it's removed.
+- **Small, fast updates**: updates download only the changed parts of the installer (a few MB) via
+  differential (delta) downloads, instead of the whole ~400 MB file every time.
+- **Updater diagnostics**: the updater writes a log to the app-data `logs/updater.log`, so any future
+  hiccup can be pinpointed instead of failing silently.
 
 ## [0.8.2] — 2026-07-29
 Reader navigation polish and a fix for updates that could get stuck at "100% downloaded".
@@ -190,10 +178,7 @@ stable cut. Enable *Settings → App updates → Include beta & hotfix releases*
   automatically the first time you launch after an update.
 
 [Unreleased]: https://github.com/Shade2010/Kokoro-releases/releases
-[0.8.3-beta.4]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.4
-[0.8.3-beta.3]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.3
-[0.8.3-beta.2]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.2
-[0.8.3-beta.1]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.1
+[0.9.0]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.9.0
 [0.8.2]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.2
 [0.8.1]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.1
 [0.8.0]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.0
