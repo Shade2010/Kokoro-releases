@@ -12,6 +12,19 @@ Release channels:
 
 ## [Unreleased]
 
+## [0.8.2] — 2026-07-29
+Reader navigation polish and a fix for updates that could get stuck at "100% downloaded".
+
+### Changed
+- **Long-strip navigation**: in Long strip mode the chapter buttons now default to right-to-left
+  (Next on the left, Previous on the right), matching manga convention.
+- **Display panel auto-closes**: the reader's ⚙ Display panel now dismisses itself after 15 seconds
+  with no interaction, or as soon as you click outside it.
+
+### Fixed
+- **Updates no longer stall at "100% downloaded"**: the updater now downloads the full installer
+  rather than a differential (blockmap) patch, which could hang at 100% and never install.
+
 ## [0.8.1] — 2026-07-29
 Engine update that gets Cloudflare-protected sources reading again, plus extension-repository management.
 
@@ -154,6 +167,7 @@ stable cut. Enable *Settings → App updates → Include beta & hotfix releases*
   automatically the first time you launch after an update.
 
 [Unreleased]: https://github.com/Shade2010/Kokoro-releases/releases
+[0.8.2]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.2
 [0.8.1]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.1
 [0.8.0]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.0
 [0.1.0-beta.4]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.1.0-beta.4
