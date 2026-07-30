@@ -12,6 +12,11 @@ Release channels:
 
 ## [Unreleased]
 
+## [0.8.3-beta.3] — 2026-07-29
+Beta test — re-enables **differential (delta) downloads** so updates fetch only the changed parts of
+the installer instead of the whole ~400 MB file. The saving applies from this build forward: updating
+*to* beta.3 is still a full download, but beta.3 → the next build should be much smaller.
+
 ## [0.8.3-beta.2] — 2026-07-29
 Beta hotfix test — no functional changes. Published solely to confirm the in-app updater can now
 download and install an update (beta.1 → beta.2) after the "stuck at 100% downloaded" fix.
@@ -181,6 +186,7 @@ stable cut. Enable *Settings → App updates → Include beta & hotfix releases*
   automatically the first time you launch after an update.
 
 [Unreleased]: https://github.com/Shade2010/Kokoro-releases/releases
+[0.8.3-beta.3]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.3
 [0.8.3-beta.2]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.2
 [0.8.3-beta.1]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.1
 [0.8.2]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.2
