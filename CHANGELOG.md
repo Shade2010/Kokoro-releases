@@ -12,6 +12,16 @@ Release channels:
 
 ## [Unreleased]
 
+## [0.8.3-beta.1] — 2026-07-29
+Beta to verify the auto-updater fix — in-app updates were stalling at "100% downloaded" and not installing.
+
+### Fixed
+- **Auto-update can finalize and install**: removed the publisher (code-signing) verification that, on
+  this unsigned build, could stop a completed download from installing. Combined with the full-download
+  switch already in 0.8.2, in-app updates should now download and apply cleanly.
+- **Updater diagnostics**: the updater now writes a log to the app data `logs/updater.log`, so any future
+  stall can be pinpointed instead of failing silently.
+
 ## [0.8.2] — 2026-07-29
 Reader navigation polish and a fix for updates that could get stuck at "100% downloaded".
 
@@ -167,6 +177,7 @@ stable cut. Enable *Settings → App updates → Include beta & hotfix releases*
   automatically the first time you launch after an update.
 
 [Unreleased]: https://github.com/Shade2010/Kokoro-releases/releases
+[0.8.3-beta.1]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.1
 [0.8.2]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.2
 [0.8.1]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.1
 [0.8.0]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.0
