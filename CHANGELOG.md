@@ -12,6 +12,10 @@ Release channels:
 
 ## [Unreleased]
 
+## [0.8.3-beta.4] — 2026-07-29
+Beta test — no functional changes. Published to confirm beta.3 → beta.4 downloads as a small
+differential (delta) update instead of the full installer.
+
 ## [0.8.3-beta.3] — 2026-07-29
 Beta test — re-enables **differential (delta) downloads** so updates fetch only the changed parts of
 the installer instead of the whole ~400 MB file. The saving applies from this build forward: updating
@@ -186,6 +190,7 @@ stable cut. Enable *Settings → App updates → Include beta & hotfix releases*
   automatically the first time you launch after an update.
 
 [Unreleased]: https://github.com/Shade2010/Kokoro-releases/releases
+[0.8.3-beta.4]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.4
 [0.8.3-beta.3]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.3
 [0.8.3-beta.2]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.2
 [0.8.3-beta.1]: https://github.com/Shade2010/Kokoro-releases/releases/tag/v0.8.3-beta.1
